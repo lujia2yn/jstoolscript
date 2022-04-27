@@ -9,4 +9,6 @@
 ###### git add .
 ###### git commit -m "my" 
 ###### git remote add origin  "创库地址"
-###### git push -u origin master
+###### git push -u origin master  
+
+###### git-https-跳过验证的方法:  git config --global http.ssLVerify "false"
