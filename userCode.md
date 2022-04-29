@@ -2,9 +2,9 @@
 
 ```js
 {
-	"Print to sever": {
+	"基于express服务器基本配置": {
 		// "scope": "javascript,typescript",
-		"prefix": "sever",
+		"prefix": "express",
 		"body": [
 			"const { json } = require('express');",
 			"const express = require('express');",
@@ -18,9 +18,9 @@
 			"   console.log('9000端口开启成功！');",
 			"});"
 		],
-		"description": "获取html元素方法的代码片段"
+		"description": "基于express服务器基本配置"
 	},
-	"Print to console": {
+	"Mvvm结构": {
 		// "scope": "javascript,typescript",
 		"prefix": "v2",
 		"body": [
@@ -28,22 +28,25 @@
 			"    el:'',",
 			"    data:{",
 			"",
+			"    },",
+			"    methods:{",
+			"",
 			"    }",
 			"})"
 		],
-		"description": "Log output to console"
+		"description": "Mvvm结构"
 	},
-	"Print to first": {
+	"forEach": {
 		// "scope": "javascript,typescript",
-		"prefix": "for1",
+		"prefix": "fe",
 		"body": [
 			"forEach((item, index)=>{",
 			"",
 			"})"
 		],
-		"description": "Log output to console"
+		"description": "forEach遍历"
 	},
-	"Print to second-one": {
+	"获取document元素封装(1)": {
 		// "scope": "javascript,typescript",
 		"prefix": "$",
 		"body": [
@@ -51,15 +54,47 @@
 			"    return flag == true ? [...document.querySelectorAll(obj)] : document.querySelector(obj);",
 			"}"
 		],
-		"description": "Log output to console"
+		"description": "获取document元素封装"
 	},
-	"Print to second-two": {
+	"获取document元素封装(2)": {
 		// "scope": "javascript,typescript",
 		"prefix": "$1",
 		"body": [
 			"let $ = (obj, flag) => flag == true ? [...document.querySelectorAll(obj)] : document.querySelector(obj);"
 		],
-		"description": "获取html元素方法的代码片段"
+		"description": "获取document元素封装"
+	},
+	"$('')": {
+		// "scope": "javascript,typescript",
+		"prefix": "d",
+		"body": [
+			"$('')"
+		],
+		"description": "获取document元素封装"
+	},
+	"控制台打印": {
+		// "scope": "javascript,typescript",
+		"prefix": "l",
+		"body": [
+			"console.log();"
+		],
+		"description": "控制台打印"
+	},
+	"获取html元素（方法一）": {
+		// "scope": "javascript,typescript",
+		"prefix": "qs",
+		"body": [
+			"document.querySelector('')"
+		],
+		"description": "获取html元素（方法一）"
+	},
+	"获取html元素（方法二）": {
+		// "scope": "javascript,typescript",
+		"prefix": "qss",
+		"body": [
+			"document.querySelectorAll('')"
+		],
+		"description": "获取html元素（方法二）"
 	}
 }
 
